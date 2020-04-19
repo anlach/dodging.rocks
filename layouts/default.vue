@@ -11,7 +11,7 @@
         >
           <v-list-item-action>
             <v-icon v-if="item.icon !== ''">{{ item.icon }}</v-icon>
-            <v-img v-else max-height="50" max-width="50" :src="item.img" />
+            <v-img v-else height="70" width="70" :src="item.img" />
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title v-text="item.title" />
@@ -24,7 +24,7 @@
       clipped-left
       fixed
       app
-      src="~/assets/img/somerledi/IMG_20180410_140152091.jpg"
+      src="/img/somerledi/IMG_20180410_140152091.jpg"
     >
       <template v-slot:img="{ props }">
         <v-img
@@ -50,6 +50,9 @@
 </template>
 
 <script>
+// const test = require('~/assets/dink.jpg')
+
+// console.log('here it is:', test)
 export default {
   data() {
     return {
@@ -62,19 +65,19 @@ export default {
         },
         {
           icon: '',
-          img: '~/assets/somer.jpg',
+          img: '/somer.jpg',
           title: 'Somerledi',
           to: '/somerledi'
         },
         {
           icon: '',
-          img: '~/assets/dink.jpg',
+          img: '/dink.jpg',
           title: 'Urist',
           to: '/dinghy'
         },
         {
           icon: '',
-          img: '~/assets/rock-dodge.png',
+          img: '/rock-dodge.png',
           title: 'Site',
           to: '/site'
         }

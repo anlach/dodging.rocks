@@ -1,6 +1,6 @@
 <template>
   <v-app dark>
-    <img src="~/assets/rock-dodge.png" height="32px" width="32px" />
+    <img src="/rock-dodge.png" height="32px" width="32px" />
     <h1 v-if="error.statusCode === 404">
       {{ pageNotFound }}
     </h1>
