@@ -22,16 +22,20 @@
           fab
           router
           x-large
-          align="center"
           height="60px"
-          width="220px"
-          overflow="hidden"
-          overflow-y="hidden"
+          width="210px"
           rounded
-          color="green"
         >
-          <img height="72" width="72" :src="item.img" />
-          <p class="font-weight-bold text-uppercase">{{ item.title }}</p>
+          <v-row no-gutters>
+            <v-col cols="4">
+              <v-avatar size="60" left="-10px">
+                <img :src="item.img" />
+              </v-avatar>
+            </v-col>
+            <v-col cols="8">
+              <p class="font-weight-bold text-uppercase">{{ item.title }}</p>
+            </v-col>
+          </v-row>
         </v-btn>
       </v-speed-dial>
     </v-content>
