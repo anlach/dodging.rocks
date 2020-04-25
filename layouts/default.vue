@@ -1,43 +1,41 @@
 <template>
   <v-app dark>
-    <v-speed-dial
-      v-model="drawer"
-      absolute
-      top
-      left
-      direction="bottom"
-      transition="slide-y-transition"
-    >
-      <template v-slot:activator>
-        <v-btn v-model="drawer" x-large absolute dark fab>
-          <v-icon v-if="drawer" x-large>mdi-close</v-icon>
-          <v-icon v-else x-large>mdi-buddhism </v-icon>
-        </v-btn>
-      </template>
-      <v-btn fab dark small color="green">
-        <v-icon>mdi-pencil</v-icon>
-      </v-btn>
-      <v-btn fab dark small color="green">
-        <v-icon>mdi-pencil</v-icon>
-      </v-btn>
-      <v-btn fab dark small color="green">
-        <v-icon>mdi-pencil</v-icon>
-      </v-btn>
-      <!-- <v-btn
-        v-for="(item, i) in items"
-        :key="i"
-        :to="item.to"
-        x-large
-        router
-        fab
-        dark
-        small
-        color="green"
+    <v-content>
+      <v-speed-dial
+        v-model="drawer"
+        absolute
+        top
+        left
+        direction="bottom"
+        transition="slide-y-transition"
       >
-        <v-img height="72" width="72" :src="item.img" />
-      </v-btn> -->
-    </v-speed-dial>
-    <v-card id="create">
+        <template v-slot:activator>
+          <v-btn v-model="drawer" x-large dark fab>
+            <v-icon v-if="drawer" x-large>mdi-close</v-icon>
+            <v-icon v-else x-large>mdi-buddhism </v-icon>
+          </v-btn>
+        </template>
+        <v-container wrap="false">
+          <v-row
+            v-for="(item, i) in items"
+            :key="i"
+            :to="item.to"
+            router
+            align="center"
+          >
+            <v-col cols="4">
+              <v-btn rounded x-large fab dark overflow="hidden">
+                <v-img height="72" width="72" :src="item.img" />
+              </v-btn>
+            </v-col>
+            <v-col cols="8">
+              <p class="font-weight-bold text-uppercase">{{ item.title }}</p>
+            </v-col>
+          </v-row>
+        </v-container>
+      </v-speed-dial>
+    </v-content>
+    <!-- <v-card id="create">
       <v-container fluid>
         <v-row class="child-flex">
           <v-col cols="12" sm="6" md="4">
@@ -112,7 +110,7 @@
           <v-icon>mdi-delete</v-icon>
         </v-btn>
       </v-speed-dial>
-    </v-card>
+    </v-card> -->
     <!-- <v-menu v-model="drawer" absolute>
       <v-list>
         <v-list-item
@@ -137,7 +135,7 @@
 
     <v-content>
       <v-container>
-        <nuxt />
+        <!-- <nuxt /> -->
       </v-container>
     </v-content>
   </v-app>
@@ -201,3 +199,10 @@ export default {
   }
 }
 </script>
+
+<style>
+.v-speed-dial--direction-bottom .v-speed-dial__list {
+  left: 0;
+  width: 300px;
+}
+</style>
