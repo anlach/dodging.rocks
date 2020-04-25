@@ -28,12 +28,12 @@
         >
           <v-row no-gutters>
             <v-col cols="4">
-              <v-avatar size="60" left="-10px">
+              <v-avatar size="60">
                 <img :src="item.img" />
               </v-avatar>
             </v-col>
-            <v-col cols="8">
-              <p class="font-weight-bold text-uppercase">{{ item.title }}</p>
+            <v-col cols="8" style="align-self: center">
+              {{ item.title }}
             </v-col>
           </v-row>
         </v-btn>
@@ -139,7 +139,7 @@
 
     <v-content>
       <v-container>
-        <!-- <nuxt /> -->
+        <nuxt />
       </v-container>
     </v-content>
   </v-app>
