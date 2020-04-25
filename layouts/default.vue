@@ -15,24 +15,24 @@
             <v-icon v-else x-large>mdi-buddhism </v-icon>
           </v-btn>
         </template>
-        <v-container wrap="false">
-          <v-row
-            v-for="(item, i) in items"
-            :key="i"
-            :to="item.to"
-            router
-            align="center"
-          >
-            <v-col cols="4">
-              <v-btn rounded x-large fab dark overflow="hidden">
-                <v-img height="72" width="72" :src="item.img" />
-              </v-btn>
-            </v-col>
-            <v-col cols="8">
-              <p class="font-weight-bold text-uppercase">{{ item.title }}</p>
-            </v-col>
-          </v-row>
-        </v-container>
+        <v-btn
+          v-for="(item, i) in items"
+          :key="i"
+          :to="item.to"
+          fab
+          router
+          x-large
+          align="center"
+          height="60px"
+          width="220px"
+          overflow="hidden"
+          overflow-y="hidden"
+          rounded
+          color="green"
+        >
+          <img height="72" width="72" :src="item.img" />
+          <p class="font-weight-bold text-uppercase">{{ item.title }}</p>
+        </v-btn>
       </v-speed-dial>
     </v-content>
     <!-- <v-card id="create">
