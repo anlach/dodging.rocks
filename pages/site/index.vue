@@ -7,17 +7,22 @@
       </div>
       <v-card>
         <v-card-title class="headline">
-          This site was built by Andew LaCharite using Vue.js with Nuxt.js and
-          Vuetify.js.
+          This site was built by Andew LaCharite using Vue with Nuxt and
+          Vuetify.
         </v-card-title>
         <v-card-text>
+          <a href="https://vuejs.org" target="_blank">
+            Vue
+          </a>
+          <br />
+
           <a href="https://vuetifyjs.com" target="_blank">
-            Vuetify documentation
+            Vuetify
           </a>
           <br />
 
           <a href="https://nuxtjs.org/" target="_blank">
-            Nuxt Documentation
+            Nuxt
           </a>
         </v-card-text>
         <v-card-actions>
