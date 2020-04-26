@@ -3,7 +3,7 @@
     <v-content>
       <v-speed-dial
         v-model="drawer"
-        absolute
+        fixed
         top
         left
         direction="bottom"
