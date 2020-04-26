@@ -28,7 +28,7 @@
         >
           <v-row no-gutters>
             <v-col cols="4">
-              <v-avatar size="60">
+              <v-avatar size="56">
                 <img :src="item.img" />
               </v-avatar>
             </v-col>
