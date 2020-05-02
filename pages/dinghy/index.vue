@@ -1,10 +1,7 @@
 <template>
   <v-carousel height="100vh" show-arrows-on-hover>
-    <v-carousel-item
-      v-for="(src, i) in filenames"
-      :key="i"
-      :src="'/img/dinghy/' + src"
-    >
+    <v-carousel-item v-for="(src, i) in filenames" :key="i">
+      <v-img height="100vh" contain :src="'/img/dinghy/' + src"> </v-img>
     </v-carousel-item>
   </v-carousel>
 </template>

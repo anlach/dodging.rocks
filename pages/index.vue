@@ -2,10 +2,7 @@
   <v-content>
     <section id="quote">
       <v-row no-gutters>
-        <v-img
-          :min-height="'calc(100vh - ' + $vuetify.application.top + 'px)'"
-          src="/img/somerledi/sunset1.jpg"
-        >
+        <v-img cover height="100vh" src="/img/somerledi/sunset1.jpg">
           <v-theme-provider dark>
             <v-container fill-height>
               <v-row align="center" class="mx-auto" justify="center">
