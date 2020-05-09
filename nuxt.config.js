@@ -23,6 +23,11 @@ export default {
         href:
           'https://fonts.googleapis.com/css2?family=Gaegu:wght@400&display=swap',
         rel: 'stylesheet'
+      },
+      {
+        href:
+          'https://fonts.googleapis.com/css2?family=Calligraffitti&family=Raleway&display=swap',
+        rel: 'stylesheet'
       }
     ]
   },

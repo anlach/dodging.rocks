@@ -28,7 +28,6 @@ export default {}
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Raleway&display=swap');
 .text {
   width: 100vw;
   position: fixed;
